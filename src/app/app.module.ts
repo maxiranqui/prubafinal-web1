@@ -9,6 +9,15 @@ import { RutinaComponent } from './rutina/rutina.component';
 import { TablaclienteComponent } from './tablacliente/tablacliente.component';
 import { TablarutinaComponent } from './tablarutina/tablarutina.component';
 
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { MatTableModule } from '@angular/material/table';
+import { MatMenuModule } from '@angular/material/menu';
+import { HttpClientModule } from '@angular/common/http';
+import{ConsultarService} from 'src/app/Servicio/consultar-service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,9 +29,18 @@ import { TablarutinaComponent } from './tablarutina/tablarutina.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule, 
+    FormsModule,
+    MatCardModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatTableModule,
+    MatMenuModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ConsultarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,7 @@
+[
+    { "nombre": "Luis", "apellido": "Parada", "telefono": 4444,"direccion": "Neuquen", "fechaDeNacimiento": "12/12/1988" },
+    { "nombre": "Maxi", "apellido": "Ranquileo", "telefono": 4444,"direccion": "Neuquen", "fechaDeNacimiento": "21/08/1988" },
+    { "nombre": "Nicolas", "apellido": "Messi", "telefono": 555,"direccion": "Centenario", "fechaDeNacimiento": "21/08/1985" },
+    { "nombre": "Luis", "apellido": "Suarez", "telefono": 6666,"direccion": "Centenario", "fechaDeNacimiento": "21/08/1982" }
+
+] 

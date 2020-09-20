@@ -1,1 +1,56 @@
-<p>cliente works!</p>
+<div class="client">
+<form [formGroup]='clienteForm' (ngSubmit)=submit()>
+    <div class="pepe">
+        <mat-card class="container">
+            <mat-card-title>Cargar cliente</mat-card-title>
+
+            <div class="container">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Nombre: </mat-label>
+                    <input type="text" formControlName="nombre" matInput placeholder="Nombre">
+
+                </mat-form-field>
+            </div>
+            <div class="container">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Apellido: </mat-label>
+                    <input type="text" formControlName="apellido" matInput placeholder="Apellido">
+
+                </mat-form-field>
+            </div>
+            <div class="container">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Telefono: </mat-label>
+                    <input type="number" formControlName="telefono" matInput placeholder="telefono">
+
+                </mat-form-field>
+            </div>
+            <div class="container">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Dirección: </mat-label>
+                    <input type="text" formControlName="direccion" matInput placeholder="direccion">
+
+                </mat-form-field>
+            </div>
+        
+        <div class="container">
+            <mat-form-field class="example-full-width">
+                <mat-label>Fecha De Nacimiento: </mat-label>
+                <input type="text" formControlName="fechaDeNacimiento" matInput placeholder="fechaDeNacimiento">
+
+            </mat-form-field>
+        </div>
+
+           
+        
+            <mat-card-actions>
+                <div>
+                    <button mat-raised-button color="primary">Guardar</button>
+                </div>
+
+            </mat-card-actions>
+
+        </mat-card>
+    </div>
+</form>  
+</div>
